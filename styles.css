@@ -1,0 +1,11 @@
+.rightNav div {
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+.rightNav div.visible {
+    opacity: 1;
+  }
+
+.rightNav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

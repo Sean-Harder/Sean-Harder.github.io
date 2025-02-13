@@ -7,23 +7,25 @@
     <title>Sean Harder</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
 
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   </head>
   <body style="overflow-x: hidden;">
     <!-- Make Nav Component -->
     <div class="justify-content-center mx-auto" style="width: 65%;">
-      <div class="d-flex justify-content-between py-3">
+      <div id="hero" class="d-flex justify-content-between py-3">
         <div class="d-flex gap-2">
           <img src="icon.png" alt="Icon" width="25" height="25">
           <p class="mb-0">Sean Harder</p>
         </div>  
   
           <div class="d-flex gap-4">
-            <p class="mb-0">About Me</p>
-            <p class="mb-0">My Resume</p>
-            <p class="mb-0">My Work</p>
-            <p class="mb-0">Contact Me</p>
+            <a class="mb-0 text-decoration-none text-black" href="#aboutMe">About Me</a>
+            <a class="mb-0 text-decoration-none text-black" href="#myResume">My Resume</a>
+            <a class="mb-0 text-decoration-none text-black" href="#myWork">My Work</a>
+            <a class="mb-0 text-decoration-none text-black" href="#contactMe">Contact Me</a>
   
           </div>
       </div>
@@ -36,7 +38,7 @@
       </div>
       
       <div style=' margin-top: 10rem;'>
-        <h2 class="fw-bold fs-1" style="color: #5980D5">About Me</h2>
+        <h2 id="aboutMe" class="fw-bold fs-1 section" style="color: #5980D5">About Me</h2>
         <p class="mb-0" style="line-height: 200%;">
           I am a 21 year old from New Jersey, and I am currently majoring in Computer Science at High Point University. I have always had a passion for creating and innovating, and being here has only helped me realize just how much I enjoy bringing ideas to life. Whether it is through technology, design, or any other medium, I am driven by the challenge of turning concepts into something tangible and impactful.
         </p>
@@ -44,7 +46,7 @@
   
   
       <div class='justify-content-center d-flex flex-column' style='margin-top: 14rem;'>
-        <h2 class="fw-bold fs-1" style="color: #5980D5">My Resume</h2>
+        <h2 id="myResume" class="fw-bold fs-1 section" style="color: #5980D5">My Resume</h2>
         
         <div class="mt-3">
           <h3 class="fw-semibold text-decoration-underline">Overview</h3>
@@ -119,23 +121,334 @@
 
 
       <div class='justify-content-center d-flex flex-column mb-5' style='margin-top: 14rem;'>
-        <h2 class="fw-bold fs-1" style="color: #5980D5">My Work</h2>
+        <h2 id="myWork" class="fw-bold fs-1 section" style="color: #5980D5">My Work</h2>
 
+
+        <h2 class="mb-4 mt-5 fw-bold">2023</h2>
+
+        <div>
+          <div class="d-flex justify-content-between">
+            <h3 class="mb-0"><a href="https://www.coursesync.biz/" target="_blank" class="text-decoration-none fw-semibold" style="color: #4EA699">CourseSync</a></h3> 
+            <div class="fw-bold" style="color: #4EA699">July 2023 - Present</div>
+          </div>
+          <p class="mb-0 mt-2">
+            After my first semester at High Point University, I realized how challenging it was to stay on top of assignments spread across multiple platforms.
+            This sparked the idea to create <a href="https://www.coursesync.biz/" target="_blank" style="color: #4EA699">CourseSync</a>, an all-in-one solution designed to simplify how students manage and track their coursework.
+            With a focus on empowering students, <a href="https://www.coursesync.biz/" target="_blank" style="color: #4EA699">CourseSync</a> eliminates the overwhelm of juggling multiple deadlines, offering an intuitive app to keep everything organized in one place.
+            My goal is to help students take control of their academic life and reduce the stress of keeping up with assignments.
+          </p>
+          
+          <p class="mb-0 mt-3" style="font-size: 14px;">
+            *Pictures Coming Soon!*
+          </p>
+
+          
+
+
+        </div>
+        
+        <h2 class="mb-5 fw-bold" style="margin-top: 4.75rem;">2022</h2>
+
+
+        <!-- Third Project, Light API -->
+        <div>
+          <div class="d-flex justify-content-between">
+            <h3 class="mb-0 fw-semibold" style="color: #4EA699">Light API Project</h3>
+            <div class="fw-bold" style="color: #4EA699">January 2022</div>
+          </div>
+          <p class="mb-0 mt-2">
+            This project began as a way to learn how to code, starting with using LIFX's API to control lights from my desktop. 
+            What began as a simple experiment (Messing_Around.py) in Visual Studio, where I aimed to turn on a light with a few lines of code, soon developed into something more.
+          </p>
+          
+          <div class="fw-bold mt-4">Iteration 1</div>
+          <p>In the first main iteration, I integrated a Weather API, alongside the old light control code, and explored adding the Spotify API.
+            The project dynamically changes the background and images based on weather conditions (snow, rain, sunny), while displaying information like temperature, location, humidity, and air pressure.
+          </p>
+          
+          <div class="fw-bold mt-4">Iteration 2</div>
+          <p>
+            I continued to build and improve on this, refining the user interface with smaller light control options in the bottom right (color and on/off buttons), and organizing other controls in the bottom left.
+            I initially planned to connect it to the Spotify API, but ran into issues with authentication through Tkinter. Though I wasn't able to complete that part at the time, 
+            I kept researching and learning with different projects.
+          </p>
+  
+  
+          <div id="carouselExampleCaptions" class="carousel slide rounded" style="border: 5px solid #5980D5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" ari-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Images/Launch Screen.png" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .55);">
+                  <h5>Slide #1 | Iteration #1</h5>
+                  <p class="mb-0">A launch screen that lets the user select what they wish to control.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Lights.png" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block rounded px-2" style="background-color: rgba(89, 128, 213, .55);">
+                  <h5>Slide #2 | Iteration #1</h5>
+                  <p class="mb-0">Clicking the light bulb turned on the light in my room, while the slider adjusted the brightness.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Color Picker Popout.png" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .55);">
+                  <h5>Slide #3 | Iteration #1</h5>
+                  <p class="mb-0">A color picker popup tool with preset colors and an RGB-to-hex converter.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/ClearUpdate.png" class="d-block w-100" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(48, 71, 121, 0.95);">
+                  <h5>Slide #4 | Iteration #2</h5>
+                  <p class="mb-0">New Interface, adding weather API to get information about the current day. Moved old light into bottom right to work on the Spofity API in the bottom left.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/RainUpdate.png" class="d-block w-100" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(48, 71, 121, 0.95);">
+                  <h5>Slide #5 | Iteration #2</h5>
+                  <p class="mb-0">New Interface, dynamically changes the weather background depending on conditions</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <!-- Second Project, Poker Final Proect -->
+        <div style="margin-top: 10.75rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="mb-0 fw-semibold" style="color: #4EA699">Poker Final Project</h3>
+            <div class="fw-bold" style="color: #4EA699">2021 - January 2022</div>
+          </div>
+
+          <p class="mb-0 mt-2">
+            This poker game was initially developed as a personal project and later became the final assignment for my Computer Science II course in high school.
+            Written in Python and utilizing Tkinter for the graphical user interface, I began working on the project in early 2021.
+            While the code could certainly be restructured for greater efficiency and organization, it marked my first significant venture into coding. 
+            The project provided invaluable hands-on experience and played a key role in enhancing my programming skills.
+          </p>
+          
+          <div class="fw-bold mt-4">Iteration 1</div>
+          <p>
+            The initial version of the code was written in the first quarter of 2021 but was later revised. 
+            I removed the main function because I found it difficult to understand. Although this code still works to some extent, it is incomplete and missing essential components. 
+            The early version served as the basis for recoding the final version of the game.
+          </p>
+
+
+          <div id="carouselPoker" class="carousel slide rounded" style="border: 5px solid #5980D5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselPoker" data-bs-slide-to="0" class="active" ari-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselPoker" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselPoker" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselPoker" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Images/Poker/PokerLaunch.png" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block rounded px-2" style="background-color: rgba(89, 128, 213, .95);">
+                  <h5>Slide #1</h5>
+                  <p class="mb-0">A launch screen that lets the user enter their bet and start the game.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Poker/NotEnoughCash.png" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block rounded px-2" style="background-color: rgba(89, 128, 213, .95);">
+                  <h5>Slide #2</h5>
+                  <p class="mb-0">This is catches the error if the user tries to bet money they do not have.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Poker/PokerPlay.png" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .60);">
+                  <h5>Slide #3 | Iteration #1</h5>
+                  <p class="mb-0">After hitting deal cards you are put into the game.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Poker/UserWon.png" class="d-block w-100" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .55);">
+                  <h5>Slide #4 | Iteration #2</h5>
+                  <p class="mb-0">The user stood in the last picture and won!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Poker/UserLost.png" class="d-block w-100" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .55);">
+                  <h5>Slide #5 | Iteration #2</h5>
+                  <p class="mb-0">The user hit twice, and busted.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPoker" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPoker" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- First Project, Flutter front end -->
+        <div style="margin-top: 10.75rem;">
+          <div class="d-flex justify-content-between">
+            <h3 class="mb-0 fw-semibold" style="color: #4EA699">Front-End Flutter App</h3>
+            <div class="fw-bold" style="color: #4EA699">February 2022</div>
+          </div>
+          <p class="mb-0 mt-2">
+            With no prior coding experience, I heard about Flutter and decided to dive in to bring an idea I had to life. 
+            In my first week, I set up a basic front-end for the app. The design was simple and did not follow specific design principles, as this was my first project, but it was functional. 
+            The goal was to eventually connect to a light API and a weather API.
+          </p>
+
+
+          <div id="carouselFlutter" class="carousel slide rounded mt-4" style="border: 5px solid #5980D5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselFlutter" data-bs-slide-to="0" class="active" ari-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselFlutter" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselFlutter" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselFlutter" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselFlutter" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Images/Flutter App/WelcomeScreen.png" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block rounded px-2" style="background-color: rgba(89, 128, 213, .50);">
+                  <h5>Slide #1</h5>
+                  <p class="mb-0">A launch screen that lets the user enter their bet and start the game.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Flutter App/Lights.png" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block rounded px-2" style="background-color: rgba(89, 128, 213, .50);">
+                  <h5>Slide #2</h5>
+                  <p class="mb-0">This is catches the error if the user tries to bet money they do not have.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Flutter App/Weather.png" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .50);">
+                  <h5>Slide #3 | Iteration #1</h5>
+                  <p class="mb-0">After hitting deal cards you are put into the game.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/Flutter App/Settings.png" class="d-block w-100" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block rounded" style="background-color: rgba(89, 128, 213, .50);">
+                  <h5>Slide #4 | Iteration #2</h5>
+                  <p class="mb-0">The user stood in the last picture and won!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlutter" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFlutter" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+          
+      </div>
+
+
+      <!-- Line Below Hero -->
+      <div id="contactMe" class="section" style="margin-top: 10.75rem; border-top: 1px solid #dfe1e3;"></div>
+      <div class="d-flex mx-auto justify-content-between pt-4" style="width: 65%; ">
+        <div >
+          <div class="d-flex gap-2 align-items-center">
+            <img src="icon.png" alt="Icon" width="25" height="25">
+            <p class="mb-0 fw-semibold">Sean Harder</p>
+          </div>
+  
+          <div class="d-flex gap-2 mt-3 ">
+            <a class="text-black">
+              <ion-icon href="" class="text-center" name="mail" style="height: 24px; width: 24px;"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/seanharder-/" target="_blank" class="text-black">
+              <ion-icon name="logo-linkedin" style="height: 24px; width: 24px;"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex gap-5 justify-content-end">
+          <div class="d-flex flex-column fw-semibold w-50">
+            <div style="color: #5980D5;">External</div>
+            <a href="https://www.coursesync.biz/" target="_blank" class="text-decoration-none text-black fw-normal">CourseSync</a>
+          </div>
+          <div class="d-flex w-75 fw-semibold flex-column">
+            <div style="color: #5980D5;">Page Links</div>
+            <a class="text-decoration-none text-black fw-normal" href="#aboutMe">About Me</a>
+            <a class="text-decoration-none text-black fw-normal" href="#myResume">My Resume</a>
+            <a class="text-decoration-none text-black fw-normal" href="#myWork">My Work</a>
+          </div>
+        </div>
 
         
+  
+      </div>  
+
+      <div class="mt-5 align-items-center d-flex justify-content-between" style="background-color:#5980D5; height: 4rem;">
+        <div class="mx-auto d-flex justify-content-between" style="width: 65%;">
+          <p class="mb-0 fw-medium text-white">© 2025 Sean Harder. All Rights Reserved.</p>
+          
+          <div class="d-flex align-items-center text-white">
+            <a href="#hero" class="mb-0 mx-auto fw-medium me-1 text-decoration-none text-white">Back To Top</a>
+            <ion-icon class="fs-5" name="arrow-up"></ion-icon>
+          </div>
+        </div>
+
       </div>
+    
       
-    
-    
-    
-    
     </div>
+
+
+    <!-- Side Nav -->
+    <div class="flex-column" style="position: fixed; right: 2%; top: 50%; width: 10rem;">
+      <div class="text-end" style="color: #a0a6ac;" id="prevSection"></div>
+      <div class="text-end fw-bold fs-3" style="color: #5980D5;" id="navText"></div>
+      <div class="text-end" style="color: #a0a6ac;" id="nextSection"></div>
+    </div>
+
+   
 
     <!-- <div class="pt-4">
       <a href="https://sean-harder.github.io/portfolio2/">My Portfolio</a>
     </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scrollScript.js"></script>
 
   </body>
 </html>
